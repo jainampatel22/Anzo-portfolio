@@ -76,7 +76,7 @@ const Page2 = () => {
     };
   
     useEffect(() => {
-   //   animation();
+     animation();
     }, []);
   
   return (
