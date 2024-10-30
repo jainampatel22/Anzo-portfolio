@@ -1,6 +1,25 @@
 import React from 'react'
-
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react'
 const Page5 = () => {
+
+  useGSAP(function(){
+    gsap.to("#img ",{
+      rotate:360,
+      duration:5,
+      repeat:-1,
+ease:'linear'
+    })
+  })
+  useGSAP(function(){
+    gsap.to("#img2 ",{
+      rotate:180,
+      duration:5,
+      repeat:-1,
+ease:'linear'
+    })
+  })
+  
   return (
 <div className='h-screen p-5'>
       <div className='h-full w-full bg-black rounded-[50px] overflow-hidden relative'>
@@ -14,11 +33,11 @@ const Page5 = () => {
 <span className=' font-[anzo5] leading-10'> Bespoke Freelance for <span className='font-[anzo5] text-gray-400'>agencies</span> </span></p>
 <h1 className='font-[anzo1] text-[5vw] text-white left-[9%] top-[77%] absolute '>DESIGN </h1>
 <span className='font-[anzo2] text-[1.5vw] text-white left-[17%] top-[84%] absolute'>01</span>
-  <img className='font-[anzo1] text-[15vw] md:text-[30vw]  absolute top-[80%] left-10 tracking-wide' src="https://static.wixstatic.com/media/f1c650_67833facdc7a47d5aae7870d4fb7fc3e~mv2.png/v1/fill/w_61,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SUN.png" alt="" />
+  <img id='img' className='font-[anzo1] text-[15vw] md:text-[30vw]  absolute top-[80%] left-10 tracking-wide' src="https://static.wixstatic.com/media/f1c650_67833facdc7a47d5aae7870d4fb7fc3e~mv2.png/v1/fill/w_61,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SUN.png" alt="" />
    
   <h1 className='font-[anzo1] text-[4vw] text-white right-[9%] top-[78%] absolute '>DEVELOPMENT </h1>
 <span className='font-[anzo2] text-[1.5vw] text-white right-20 top-[83%] absolute'>02</span>
-  <img className='font-[anzo1] text-[15vw] md:text-[30vw]  absolute top-[80%] right-[21%] tracking-wide' src='https://static.wixstatic.com/media/f1c650_027515148725478cbb3a91eca452cabf~mv2.png/v1/fill/w_58,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/EARTH.png' alt="" />
+  <img id='img2' className='font-[anzo1] text-[15vw] md:text-[30vw]  absolute top-[80%] right-[21%] tracking-wide' src='https://static.wixstatic.com/media/f1c650_027515148725478cbb3a91eca452cabf~mv2.png/v1/fill/w_58,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/EARTH.png' alt="" />
       </div>
     </div>
   )
