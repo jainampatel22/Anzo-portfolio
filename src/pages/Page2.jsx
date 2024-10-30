@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 const Page2 = () => {
+  gsap.registerPlugin(ScrollTrigger);
 
     useGSAP(function(){
         gsap.from("#rotateText",{
