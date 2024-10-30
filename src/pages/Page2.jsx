@@ -9,7 +9,7 @@ const Page2 = () => {
         gsap.from("#rotateText",{
            transform:'rotateX(80deg)',
            opacity:0,
-           duration:2,
+           duration:5,
            stagger:1,
            scrollTrigger:{
             trigger:"#rotateText",
